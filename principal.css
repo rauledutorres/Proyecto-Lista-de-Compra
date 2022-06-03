@@ -1,0 +1,36 @@
+header{
+    display: flex;
+    justify-content: space-around;
+}
+
+
+form{ 
+
+    border: black solid 1px;
+    padding:  5px;
+    width: 300px;
+    margin-bottom: 30px;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+label {display: block;
+    padding: 10px;
+    font-family: 'Charis SIL', serif;
+}
+
+input{ 
+    font-family: 'Charis SIL', serif;
+    width: 200px;
+
+
+}
+
+
+button { 
+    font-family: 'Charis SIL', serif;
+    font-size: 20px;
+    margin-top: -20px;
+  }
