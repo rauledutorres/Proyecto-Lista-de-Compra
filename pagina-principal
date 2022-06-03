@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Página principal</title>
+<style>
+    form{ 
+
+    border: black solid 1px;
+    padding:  20px;
+    display: inline-block;
+    width: auto;
+    margin-bottom: 30px;
+    text-align: center;
+
+
+ }
+
+label{
+
+    display: block;
+    padding: 10px;
+}
+
+input{
+
+    width: 300px;
+
+
+}
+
+
+button { 
+
+    font-size: 20px;
+  }
+
+</style>
+</head>
+<body>
+
+<header> 
+    Productos <br><br><br> Supermercados <br><br><br> Contacto <br><br><br> Reclamaciones 
+</header>
+
+    <form id="datos">
+    <label>Producto</label>
+    <input type="text" name="producto" id="producto" placeholder="Escriba qué producto quiere">
+    <label>Supermercado</label>
+    <input type="text" name="supermercado" id="supermercados"><br><br>
+    <button type="button" onclick="funcion()">Rellenar</button>
+</form>
+
+</body>
+</html>
