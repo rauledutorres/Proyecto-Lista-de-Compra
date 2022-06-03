@@ -41,8 +41,11 @@ button {
 <body>
 
 <header> 
-    Productos <br><br><br> Supermercados <br><br><br> Contacto <br><br><br> Reclamaciones 
-</header>
+    <div class="nav">Productos</div> 
+    <div class="nav">Supermercados</div>
+    <div class="nav">Contacto</div> 
+    <div class="nav">Reclamaciones</div>
+ </header>
 
     <form id="datos">
     <label>Producto</label>
