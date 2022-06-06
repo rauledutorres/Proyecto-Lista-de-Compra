@@ -20,8 +20,7 @@
     <form id="datos">
       <label>Producto</label>
       <input type="text" name="producto" id="producto" placeholder="Escriba qué producto quiere">
-      <label>Supermercado</label>
-      <input type="text" name="supermercado" id="supermercados"><br><br>
+      <br><br>
       <button type="button" onclick="funcion()">Rellenar</button>
     </form>
 
