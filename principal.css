@@ -9,6 +9,7 @@ header{
     justify-content: center;
     align-items: center;
     min-height: 50vh;
+    flex-direction: row;
 }
 
 form{
@@ -19,6 +20,11 @@ form{
 
 }
 
+.producto{
+    flex-direction: row;
+    display: flex;
+
+}
 
 
 label {
@@ -39,5 +45,5 @@ input{
 button { 
     font-family: 'Charis SIL', serif;
     font-size: 20px;
-    margin-top: -20px;
+    
   }
