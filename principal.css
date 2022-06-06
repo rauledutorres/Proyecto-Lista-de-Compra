@@ -4,19 +4,26 @@ header{
 }
 
 
-form{ 
-
-    border: black solid 1px;
-    padding:  5px;
-    width: 300px;
-    margin-bottom: 30px;
-    flex-direction: column;
+.contenedor{ 
     display: flex;
     justify-content: center;
     align-items: center;
+    min-height: 50vh;
+}
+
+form{
+     padding:  5px;
+    border: black solid 1px;
+    background: linear-gradient(90deg, rgba(175,92,22,0.9794292717086834) 0%, rgba(184,84,14,0.9626225490196079) 32%, rgba(255,211,0,1) 100%);
+    width: 205px;
 
 }
-label {display: block;
+
+
+
+label {
+    color: white;
+    display: block;
     padding: 10px;
     font-family: 'Charis SIL', serif;
 }
