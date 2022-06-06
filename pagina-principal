@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -15,14 +14,16 @@
     <div class="nav">Supermercados</div>
     <div class="nav">Contacto</div> 
     <div class="nav">Reclamaciones</div>
- </header>
+</header>
     
-    <form id="datos">
-      <label>Producto</label>
-      <input type="text" name="producto" id="producto" placeholder="Escriba qué producto quiere">
-      <br><br>
-      <button type="button" onclick="funcion()">Rellenar</button>
-    </form>
+    <div class="contenedor" >
+     <form id="datos">
+       <label>Producto</label>
+       <input type="text" name="producto" id="producto" placeholder="Escriba qué producto quiere">
+       <br><br>
+       <button type="button" onclick="funcion()">Rellenar</button>
+     </form>
+    </div>
 
 </body>
 </html>
