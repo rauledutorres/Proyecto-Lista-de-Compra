@@ -17,12 +17,16 @@
 </header>
     
     <div class="contenedor" >
-     <form id="datos">
-       <label>Producto</label>
-       <input type="text" name="producto" id="producto" placeholder="Escriba qué producto quiere">
-       <br><br>
-       <button type="button" onclick="funcion()">Rellenar</button>
-     </form>
+      <form id="datos">
+        <div class="producto">  
+        <label>Producto</label>
+        <input type="text" name="producto" id="producto" placeholder="Escriba qué producto quiere">
+        <button type="button" onclick="funcion()">Rellenar</button>
+        </div>
+        
+       
+   
+      </form>
     </div>
 
 </body>
