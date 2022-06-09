@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="css/productos.css">
+	<link rel="icon" type="image/x-icon" href="media/brand/veg.png">
+	<title>Mis productos favoritos</title>
+</head>
+<body>
+
+<div id="container">
+		
+		<section id="menuHorizontal">
+			<nav id="menuHorizontal1">
+				<li class="li1"><img class="logoMenu" src="media/brand/veg.png" alt="logo Veg"></li>
+				<li class="listasin"><a href="missuper.html">Mis súper</a></li>
+				<li class="listasin"><a href="productos.html">Productos frecuentes</a></li>
+				<li class="listasin"><a href="main.html">Cesta</a></li>
+			</nav>
+		</section>
+
+		<div id="slideshow-container">
+			<ul>
+				<li><img class="imagenSlider" src="media/destacados/banner_1.jpg"></li>
+				<li><img class="imagenSlider" src="media/destacados/banner_2.jpg"></li>
+				<li><img class="imagenSlider" src="media/destacados/banner_3.jpg"></li>
+				<li><img class="imagenSlider" src="media/destacados/banner_4.jpg"></li>
+			</ul>
+		</div>
+
+		<!-- BUSCADOR PRODUCTOS -->
+		<div class="container mt-5">
+			<h1>Lista de la compra</h1>
+			<h2>Busca entre nuestros productos sugeridos</h2>
+
+			<div class="contenedorResultado">
+				<input type="text" id="formulario" class="form-control my-2" >
+				<button class="btn btn-info mb-2" id="boton" onclick="comprar()">Comprar</button>  
+					<!-- PENDIENTE crear función comprar y que se añada al carrito lo que se haya buscado.
+						¿Sería posible botón añadir por cada uno de los elementos de la constante -->
+				<ul id="resultado"> <!--Para pintar el resultado-->
+
+				</ul>
+			</div>
+		</div>
+	
+		
+		<!--Esta parte de abajo podría ir con la etiqueta <template> para que no se renderice y que genere elementos dinámicos automáticamente-->
+
+
+		<!-- REGISTRO DE NUEVOS PRODUCTOS POR EL USUARIO -->
+
+		<div class="tusPropiosProductos_container">
+			
+			<h2>¿No encuentras lo que buscas?</h2>
+			<h3>Añade tus propios productos</h3>
+			<div class="contenedorAddProduct">
+					<form>
+						<div class="form-group">
+							<label for="txtProducto">Nombre del producto</label>
+							<input type="text" placeholder="Altramuces" id="txtProducto" class="form-control">
+						</div>
+
+						<div class="form-group">
+							<label for="txtPrecio">Precio</label>
+							<input type="text" placeholder="1.80" id="txtPrecio" class="form-control">
+						</div>
+
+						<div class="form-group">
+							<label for="txtTienda">Tienda</label>
+							<input type="text" placeholder="Carrefour Express" id="txtTienda" class="form-control">
+						</div>
+						<button type="button" class="btn btn-default" id="btnSaveProduct">Añadir</button>
+					</form>
+
+					<table class="table table-hover" id="extraProductoTable">
+						<thead>
+							<tr>
+								<th>Producto</th>
+								<th>Precio</th>
+								<th>Tienda</th>
+								<th>¡Lo quiero!</th>
+							</tr>
+						</thead>
+						<tbody>
+							
+						</tbody>
+					</table>
+			</div>
+		</div>
+
+
+		<!--footer-->
+		<div id="footer">
+			<ul class="listasin">
+				<li>Quiénes somos</li>
+				<li>Preguntas frecuentes</li>
+				<li>Trabaja con nosotros</li>
+			</ul>
+			<ul class="listasin">
+				<li>Métodos de pago</li>
+				<img id="metodosCompra" src="media/icons/buy.png" alt="metodos de pago aceptados">
+			</ul>
+		</div>
+
+	</div>
+
+	<script type="text/javascript" src="js/productos.js"></script>
+	<script src="js/addproductsLogic.js"></script>
+	<script src="js/addproductsUILogic.js"></script>
+
+
+
+</body>
+</html>
