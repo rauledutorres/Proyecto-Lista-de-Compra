@@ -23,27 +23,42 @@
 			let row = tbody.insertRow(i);
 
 			//row.innerHTML = list[i] + '<input type= "button">'; 
-			row.innerHTML = list[i] + '<img onclick="deleteSuper()" id="delete" src="delete.png">'; 
-
+			//row.innerHTML = list[i] + '<img onclick="deleteSuper()" id="delete" src="delete.png">'; 
+			row.innerHTML = list[i] + '<img onclick="delete_row(this)" id="delete" src="delete.png">'; 
 		tbody.appendChild(row) ;
 
 		}
 	}
 
+// Para eliminar fila impresa
+function delete_row(e)
+{
+    if (confirm("¿Estás seguro/a?")){
+    e.parentNode.parentNode.removeChild(e.parentNode);
+		localStorage.setItem(parentNode.parentNode.removeChild);
+    }
+}
+
+	/*
+	document.querySelector('#delete').addEventListener('click', deleteSuper);
+
+	function deleteSuper(){
+		let deleteSuper = document.querySelector('#nombreMercado').value;
+		deleteSuper.target.parentNode.parentNode.removeSuper()
+*/
+
+	/*	for (var i = Things.length - 1; i >= 0; i--) {
+			Things[i]
+		}*/
+	
 
 
 /*
-function deleteSuper(){
-	let deleteSuper = document.querySelector('#nombreMercado').value;
-}*/
-
-
-/* NO FUNCIONA
+NO FUNCIONA
 $(document).on('click', '#delete', function(deleteSuper) {
   deleteSuper.preventDefault();
   $(this).closest('td').remove();
 });*/
-
 
 /* 
 

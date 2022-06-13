@@ -26,3 +26,9 @@ function localStorageExtraSuper(slist){
 }
 
 
+function deleteSuper(){
+		let nuevoSuper = document.querySelector('#nombreMercado').value;
+		extraSuper.push(nuevoSuper); // para que se añadan efectivamente al array
+		localStorageExtraSuper(extraSuper); 
+		//localStorage.setItem('extraSuper',JSON.stringify(extraSuper));
+	}
