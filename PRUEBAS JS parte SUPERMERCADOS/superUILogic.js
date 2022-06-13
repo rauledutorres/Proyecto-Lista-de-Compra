@@ -19,24 +19,58 @@
 
 		tbody.innerHTML='';
 
+
+		//elementoFalso.onclick = borrar
+
+
 		for (let i = 0; i < list.length; i++){
 			let row = tbody.insertRow(i);
 
 			//row.innerHTML = list[i] + '<input type= "button">'; 
 			//row.innerHTML = list[i] + '<img onclick="deleteSuper()" id="delete" src="delete.png">'; 
-			row.innerHTML = list[i] + '<img onclick="delete_row(this)" id="delete" src="delete.png">'; 
+			row.innerHTML = list[i] + "<img onclick=\"delete_row(this,'"+list[i]+"')\" id=\"delete\" src=\"delete.png\">"; 
+		// y en lugar de event, this
 		tbody.appendChild(row) ;
 
 		}
 	}
 
 // Para eliminar fila impresa
-function delete_row(e)
+
+function delete_row(boton,texto)
+{
+		console.log(boton);
+		console.log(texto);
+	//let nombresuper=	event.path[1].firstChild;
+
+    if (confirm("¿Estás seguro/a?")){
+
+    	//boton.parentNode.parentNode.removeChild(e.parentNode);
+			boton.parentNode.parentNode.removeChild(boton.parentNode); 
+			let listasuper= localStorage.getItem('texto'); 
+			 
+/*
+				for(let i = 0; i < listasuper.lenght; i++){
+					if (nombresuper.trim()==listasuper[i]){
+						listasuper.splice(i);
+					}
+    		}
+		*/
+		}
+	}
+
+// ESTO SÍ FUNCIONABA
+//Para eliminar fila impresa 
+
+/*function delete_row(e)
 {
     if (confirm("¿Estás seguro/a?")){
     e.parentNode.parentNode.removeChild(e.parentNode);
     }
-}
+}*/
+
+
+
 
 	/*
 	document.querySelector('#delete').addEventListener('click', deleteSuper);

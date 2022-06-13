@@ -32,3 +32,10 @@ function deleteSuper(){
 		localStorageExtraSuper(extraSuper); 
 		//localStorage.setItem('extraSuper',JSON.stringify(extraSuper));
 	}
+
+let listasuper= localStorage.getItem('localExtraSuper');
+for(let i=0;i<listasuper.lenght;i++){
+	if (nombrevariable==listasuper[i]){
+		listasuper.splice(i);
+	}
+}
