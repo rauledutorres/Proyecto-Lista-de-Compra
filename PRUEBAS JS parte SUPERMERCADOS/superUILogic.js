@@ -47,8 +47,9 @@ function delete_row(boton,texto)
 
     	//boton.parentNode.parentNode.removeChild(e.parentNode);
 			boton.parentNode.parentNode.removeChild(boton.parentNode); 
+			//SIMPLIFICAR LO ANTERIOR. PARENTCHILD. VERLO
 			let listasuper= localStorage.getItem('texto'); 
-			 
+
 /*
 				for(let i = 0; i < listasuper.lenght; i++){
 					if (nombresuper.trim()==listasuper[i]){
