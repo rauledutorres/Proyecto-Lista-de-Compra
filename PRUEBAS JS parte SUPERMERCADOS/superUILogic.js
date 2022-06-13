@@ -35,7 +35,6 @@ function delete_row(e)
 {
     if (confirm("¿Estás seguro/a?")){
     e.parentNode.parentNode.removeChild(e.parentNode);
-		localStorage.setItem(parentNode.parentNode.removeChild);
     }
 }
 
