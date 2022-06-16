@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="principal.css">
+    <link rel="stylesheet" type="text/css" href="super.css"> 
+    <title>Supermercados</title>
+    
+</head>
+<body>
+
+    
+
+    <div id="container_super">
+        
+        <header> 
+            <div class="nav"><a href="productos.html" class="text-underlined">Productos</a></div> 
+            <div class="nav"><a href="paginasuper.html" class="text-underlined">Supermercados</a></div>
+            <div class="nav"><a href="principal.html" class="text-underlined">Principal</a></div> 
+        </header>
+
+   
+
+        <div id="slideshow-container">
+            <ul>
+                <li><img class="imagenSlider" src="media/destacados/banner_2.jpg"></li>
+                <li><img class="imagenSlider" src="media/destacados/banner_3.jpg"></li>
+                <li><img class="imagenSlider" src="media/destacados/banner_4.jpg"></li>
+                <li><img class="imagenSlider" src="media/destacados/banner_5.jpg"></li>
+            </ul>
+        </div>
+       
+        <h1>Supermercados</h1>
+
+        
+
+        <div id="parteCentral">
+           
+           <aside>
+                <h3>Easy!</h3>
+                <p>Tu nueva forma de comprar</p>
+                <div id="aside_box">
+                    <div class="aside_box_img"><a href="paginasuper.html"><img src="media/suoer.jpg" alt="vista de supermercado"></a></div>
+                    <div class="aside_box_text"><p>1. Registra tus súper<br> favoritos</p></div>
+                </div>
+                <div id="aside_box">
+                    <div class="aside_box_img"><a href="productos.html"><img src="media/bananas.jpg" alt="plátanos en exposición"></a></div>
+                    <div class="aside_box_text"><p>2. Elige tus productos<br> habituales</p></div>
+                </div>
+                <div id="aside_box">
+                    <div class="aside_box_img"><img src="media/despensa.jpg" alt="productos variados"></div>
+                    <div class="aside_box_text"><p>3. Llena tu despensa<br> sin moverte</p></div>
+                </div>
+            </aside>
+
+           <div id="impresoJS">
+
+                <div id="cajita">
+                    <h3>Añade tus súper favoritos</h3>
+
+                    <div>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="carrito" viewBox="0 0 16 16">
+                            <path d="M5.929 1.757a.5.5 0 1 0-.858-.514L2.217 6H.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h.623l1.844 6.456A.75.75 0 0 0 3.69 15h8.622a.75.75 0 0 0 .722-.544L14.877 8h.623a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1.717L10.93 1.243a.5.5 0 1 0-.858.514L12.617 6H3.383L5.93 1.757zM4 10a1 1 0 0 1 2 0v2a1 1 0 1 1-2 0v-2zm3 0a1 1 0 0 1 2 0v2a1 1 0 1 1-2 0v-2zm4-1a1 1 0 0 1 1 1v2a1 1 0 1 1-2 0v-2a1 1 0 0 1 1-1z"/>
+                            </svg>
+                            <label for="nombreMercado"></label>
+                            <input type="text" id="nombreMercado" placeholder="¿Lidl? ¿Mercadona?">
+                            <button id="btn">Añadir</button>
+                    </div>
+                </div>
+
+                <h2>Supermercados elegidos</h2>
+
+                <table class="listasuper" id="extraSuper">
+                   <thead>
+                       <tr>
+                           <td></td>
+                       </tr>
+                   </thead>
+                   <tbody>
+                       
+                   </tbody>
+                </table> 
+            </div>
+
+            
+
+
+        </div>
+    </div>
+
+
+    <script src="superLogic.js"></script>
+    <script src="superUILogic.js"></script>
+
+
+</body>
+</html>
