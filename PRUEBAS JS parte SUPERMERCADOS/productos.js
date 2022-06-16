@@ -1,5 +1,3 @@
-//El usuario registra sus productos y se imprimen en tabla
-
 // Variables para registrar producto
 	const nombreProducto = document.getElementById("nombreProducto");
 	const btnAddProducto = document.getElementById("btn-addProducto");
@@ -10,10 +8,23 @@
 	btnAddProducto.addEventListener('click', addProducto);
 
 // Variables para imprimir tabla
+	let i, j;
+	let nCantidadProductos = //nombrearrayproductos?.length;
 	const tabla = document.querySelector("#tabla");
 
-	//bucle para filas
+	//bucle para filas, considerando el largo del array 
 	const fila = document.createElement("tr");
-		//bucle celdas
+		for (i = 0; i < nCantidadProductos; i++) {
+
+		}
+		// bucle celdas 
 		const celdas = document.createElement("td");
+		
+
+// Hacer función para LocalStorage meterlo en el nuevo Array
+
+
+// Hacer función que cree nuevo array 
+
+	//metiendo nombre producto.*/
 

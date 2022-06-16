@@ -10,45 +10,116 @@
 
 header{ 
 
-	background-color: #1e363ecc;
-    display: flex;
-    justify-content: space-around;
-    color: white;
+	background-color: #a24035fc;
+	height: 50px;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	color: #fff;
 
  }
 
- .nav{ 
+#btn-menu{
+	display: none;
+}
 
- 	padding: 10px;
- 	font-family: 'Charis SIL', serif;
+ header label{ 
 
-  }
-
-.secciones{ 
-
-	display: grid;
-	justify-content: center;
-	padding: 15px;
+ 	font-size: 30px;
+ 	cursor: pointer;
+ 	display: none;
 
  }
+
+.menu ul{ 
+
+	display: flex;
+	list-style: none;
+
+ }
+
+ .menu ul ul{ 
+ 	display: none;
+ 	background-color: #a24035fc; 
+
+ }
+
+ .menu a {
+ 	display: block;
+ 	padding: 15px 20px;
+ 	color: #fff;
+ 	text-decoration: none;
+ }
+
+.menu a:hover {
+	background: rgba(0,0,0,0.3);
+}
+
+.menu a span {
+	margin-left: 10px;
+
+}
+
+.menu ul li:hover ul{
+	display: block;
+	position: absolute;
+}
+
+@media (max-width: 768px) {
+	header label {
+		display: block;
+	}
+	.menu{
+		position: absolute;
+		top: 50px;
+		left: 0;
+		width: 100%;
+		transform: translateX(-100%);
+		transition: all 0.3s;
+	}
+	.menu ul{
+		flex-direction: column;
+		background: #555;
+	}
+
+	.menu ul li:hover ul {
+		display: none;
+		position: static;
+	}
+
+	.menu a span {
+
+		position: absolute;
+		right: 5px;
+	}
+ 
+	#btn-menu:checked ~ .menu{
+		transform: translateX(0%);
+	}
+
+	.menu ul ul{ 
+		background: rgba(0,0,0,0.4); 
+	}
+
+	.menu ul ul a{
+
+		padding: 15px 40px;
+	}
+
+}
 
  .seccProduct{
 
- 	border-bottom: solid #1e363ecc 5px;
+ 	border-bottom: solid #a24035fc 5px;
  	margin: auto;
  	background: linear-gradient(90deg, rgba(175,92,22,0.9794292717086834) 0%, rgba(184,84,14,0.9626225490196079) 32%, rgba(255,211,0,1) 100%);
 
  }
 
-nav{ 
+/*Esto lo he comentado porque en un principio, a la hora de maquetar, fue útil, pero ahora mismo no sirve de mucho. De todas formas, en lugar de
+borrarlo, he preferido que quede reflejado y ya está*/
 
-width: 100%;
-height: 35px;
-
-}
-
-
-ul{
+/*ul{
 	margin-left: 400px;
 	margin-right: 400px;
 	list-style: none;
@@ -56,32 +127,21 @@ ul{
 	text-align: center;
 	position: relative;
 	padding: 20px;
-
-
-
 }
-
 li{ 
-
 	padding: 5px;
  }
-
 a{ 
-
 	text-decoration: none;
 	color: black;
  }
-
 li a:hover{ 
 	background-color: #77889969
 	 }
-
 .seccProduct li ul{ 
-
 	display: none;
 	position: absolute;
-
-}
+}*/
 
 body {
 
@@ -100,53 +160,52 @@ h1{
 	justify-content: center;
 }
 
-h4{
+h3{
 
 	font-family: 'Work Sans', sans-serif;
+	font-size: 25px;
 
 }
 
- .titulos{ 
-
- 	display: flex;
- 	justify-content: left;
- 	font-family: 'Charis SIL', serif;
- 	padding: 30px;
-
-
-  }
 
  .container{ 
 
  	display: flex; 
- 	flex-direction: row;
+ 	flex-direction: column;
  	justify-content: center;
+ 	text-align: center;
  	padding: 30px;
- 	border-bottom: solid #1e363ecc 5px;
-
+ 	margin-top: 10%;
+ 	margin-right: 35%;
+ 	margin-left: 35%;
+ 	border: solid black 1px;
 
  } 
 
- .contenido{ 
+form{ 
+	
+ 	text-align: center;
+ 	display: flex;
+ 	justify-content: center;
+ 	padding: 30px;
+ 	
+	 }
 
+button{
+	padding: 2px;
+}
+
+ /*.contenido{ 
  	display: flex;
  	justify-content: space-between;
-
   }
-
  .nameProduct{
-
  	display: flex;
-
  }
-
  .producto{
-
  	witdh: 152px;
  	height: 160px;
  }
-
  .logo{ 
-
  	width:40px;
- 	height:40px; }
+ 	height:40px; }*/
