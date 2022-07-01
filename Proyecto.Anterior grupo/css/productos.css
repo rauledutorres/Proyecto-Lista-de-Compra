@@ -1,0 +1,43 @@
+h1, h2, h3{
+	text-align: center;
+	margin: 0 auto;
+	margin-top: 15px;
+}
+
+#resultado{
+	list-style: none;
+}
+
+.contenedorResultado{
+	position: relative;
+	background-color: white;
+	text-align: center;
+	margin: 30px 0px 50px 0px;
+
+}
+
+.resultado{
+	position: relative;
+	line-height: 1.5;
+
+}
+
+.contenedorAddProduct{
+	text-align: center;
+	margin-top: 20px;
+}
+
+#extraProductoTable{
+	margin: 25px auto 50px auto;
+
+}
+
+tbody{
+	background-color: #D9D9D9;
+}
+
+li{
+	line-height: 1.3;
+}
+
+
